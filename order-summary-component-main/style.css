@@ -1,0 +1,143 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Red Hat Display' sans-serif; */
+}
+
+.Card {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.Card__Container {
+    height: 600px;
+    width: 400px;
+    border: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.Card__img {
+    height: 200px;
+}
+
+.Con__img {
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.Card__text {
+    padding: 0 30px;
+}
+
+.Card__text--heading {
+    margin-top: 20px;
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+}
+
+.Card__text--info {
+    margin-top: 20px;
+    font-size: 20px;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+.Order {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+    padding: 25px 25px;
+}
+
+.img__Plan {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Con__img2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+}
+
+.Order__Plan {
+    display: flex;
+    flex-direction: column;
+}
+
+.Order__Plan--annual {
+    color: hsl(223, 47%, 23%);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Order__Plan--price {
+    color: hsl(224, 23%, 55%);
+}
+
+#Order__removed {
+    display: flex;
+    font-size: 16px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Submit {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 8px;
+    background-color: hsl(245, 75%, 52%);
+    width: 100%;
+}
+
+.Submit__Payment {
+    color: white;
+    text-align: center;
+}
+
+#Cancel__Payment {
+    margin-top: 20px;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#Order__removed:hover {
+    color: red;
+}
+
+.Submit:hover {
+    background-color: red;
+}
+
+#Cancel__Payment:hover {
+    color: red;
+}
+
+.attribution {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
