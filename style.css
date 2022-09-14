@@ -6,7 +6,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.Card {
+.card {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -16,7 +16,7 @@
     background-color: hsl(225, 100%, 94%);
 }
 
-.Card__Container {
+.card__container {
     height: 600px;
     width: 400px;
     border: 20px;
@@ -24,35 +24,35 @@
     background-color: white;
 }
 
-.Card__img {
+.card__img {
     height: 200px;
 }
 
-.Con__img {
+.con__img {
     width: 400px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 
-.Card__text {
+.card__text {
     padding: 0 30px;
 }
 
-.Card__text--heading {
+.card__text--heading {
     margin-top: 20px;
     text-align: center;
     color: hsl(223, 47%, 23%);
 }
 
-.Card__text--info {
+.card__text--info {
     margin-top: 20px;
     font-size: 20px;
     color: hsl(224, 23%, 55%);
     text-align: center;
 }
 
-.Order {
+.order {
     background-color: hsl(225, 100%, 98%);
     border-radius: 8px;
     display: flex;
@@ -63,34 +63,34 @@
     padding: 25px 25px;
 }
 
-.img__Plan {
+.img__plan {
     width: 45%;
     display: flex;
     justify-content: space-between;
 }
 
-.Con__img2 {
+.con__img2 {
     height: 40px;
     width: 40px;
     border-radius: 8px;
 }
 
-.Order__Plan {
+.order__plan {
     display: flex;
     flex-direction: column;
 }
 
-.Order__Plan--annual {
+.order__plan--annual {
     color: hsl(223, 47%, 23%);
     font-size: 16px;
     font-weight: bold;
 }
 
-.Order__Plan--price {
+.order__plan--price {
     color: hsl(224, 23%, 55%);
 }
 
-#Order__removed {
+#order__removed {
     display: flex;
     font-size: 16px;
     color: blue;
@@ -98,7 +98,7 @@
     cursor: pointer;
 }
 
-.Submit {
+.submit {
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -110,29 +110,29 @@
     width: 100%;
 }
 
-.Submit__Payment {
+.submit__payment {
     color: white;
     text-align: center;
 }
 
-#Cancel__Payment {
+.cancel__payment {
     margin-top: 20px;
-    color: hsl(224, 23%, 55%);
+    color: hsl(224, 23%, 50%);
     text-align: center;
     cursor: pointer;
     font-weight: bold;
 }
 
-#Order__removed:hover {
-    color: red;
+#order__removed:hover {
+    color:  hsl(224, 23%, 50%);
 }
 
-.Submit:hover {
-    background-color: red;
+.submit:hover {
+    background-color: hsl(224, 23%, 50%);
 }
 
-#Cancel__Payment:hover {
-    color: red;
+.cancel__payment:hover {
+    color: hsl(223, 47%, 23%);
 }
 
 .attribution {
@@ -140,4 +140,69 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .card__container {
+        width: 300px;
+        height: 480px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    .card__img {
+        height: 150px;
+    }
+
+    .con__img {
+        width: 300px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card__text {
+        padding: 0 20px;
+    }
+
+    .card__text--heading {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .card__text--info {
+        margin-top: 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .order {
+        width: 90%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        padding: 15px 15px;
+    }
+
+    .img__plan {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .con__img2 {
+        width: 15px;
+        height: 15px;
+        border-radius: 8px;
+    }
+
+    .order__plan {
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .order__plan--annual {
+        font-size: 15px;
+    }
 }
